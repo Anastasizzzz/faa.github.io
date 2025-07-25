@@ -46,7 +46,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <span class="profile-photo-circle">
+                    <img src="img/my_photo.jpg" alt="FAA" class="profile-photo">
+                </span>
+                FAA
+            </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,10 +61,10 @@
                     <a class="page-scroll" href="#about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#science">Science</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <a class="page-scroll" href="#a">a</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -71,13 +76,40 @@
     <!-- /.container-fluid -->
 </nav>
 
+<style>
+    .profile-photo-circle {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #fff; /* Белая рамка */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-right: 10px;
+        overflow: hidden;
+        vertical-align: middle;
+        background-color: #f8f9fa; /* Фон на случай если фото не загрузится */
+    }
+    
+    .profile-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .navbar-brand {
+        display: inline-flex;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+</style>
   <header>
     <div class="header-content">
         <div class="header-content-inner">
             <h1>Hi, I'm Nastya</h1>
             <hr>
             <p>DE с котиками и пальмой</p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">About</a>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">ABOUT</a>
         </div>
     </div>
 </header>
@@ -86,59 +118,197 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">We've got what you need!</h2>
+                <h2 class="section-heading">ABOUT ME</h2>
                 <hr class="light">
-                <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                <p class="text-faded">я солнышко (так сказала Циля)</p>
+
+                <!-- Skills bubbles -->
+                <div class="skills-container" style="margin-top: 50px;">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <h3 class="text-faded" style="margin-bottom: 30px;">My Skills</h3>
+                            <div class="skills-bubbles">
+                                <span class="skill-bubble">HTML5</span>
+                                <span class="skill-bubble">CSS3</span>
+                                <span class="skill-bubble">JavaScript</span>
+                                <span class="skill-bubble">Jekyll</span>
+                                <span class="skill-bubble">Git</span>
+                                <span class="skill-bubble">Python</span>
+                                <span class="skill-bubble">Design</span>
+                                <span class="skill-bubble">Photoshop</span>
+                                <span class="skill-bubble">Writing</span>
+                                <span class="skill-bubble">Leadership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact button -->
+                <div style="margin-top: 50px;">
+                    <a href="#contact" class="btn btn-default btn-xl page-scroll">CONTACT</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-  <section id="services">
+<style>
+    .skills-bubbles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    
+    .skill-bubble {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        color: white;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+    
+    .skill-bubble:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        transform: translateY(-3px);
+    }
+</style>
+  <section id="science">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">At Your Service</h2>
+                <h2 class="section-heading">SCIENCE</h2>
                 <hr class="primary">
+                <p>мои проекты</p>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                    <h3>Sturdy Templates</h3>
-                    <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+
+        <div class="content">
+            <section>
+                <div class="container flex">
+                    <div class="text editable">
+                        <h2>Оптимизация маршрута беспилотных летательных аппаратов при использовании на складе с использованием генетических алгоритмов</h2>
+                        <p>В работе рассматриваются современные тренды развития логистических систем с учетом технологий Индустрии 4.0. Одним из них является применение беспилотных аппаратов на складах для инвентаризации и доставки. В статье предлагается модель складского помещения с применением беспилотного аппарата - робота-тележки. Описан поиск оптимального маршрута с использованием генетических алгоритмов. Его применение позволяет быстро и точно рассчитать необходимый путь. Для решения написан программный код на языке Python с использованием библиотек Matplotlib и Ortools. Разработанная модель может быть использована на различных предприятиях.</p>
+                    </div>
+                    <div class="image">
+                        <img src="img/portfolio/1.jpg" alt="Screenshot" class="screenshot editable" />
+                        <div class="abstract-container">
+                            <a href="https://www.elibrary.ru/item.asp?id=46368176" class="btn btn-default btn-xl page-scroll" style="background-color: #ee4b28;">ABSTRACT</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <h3>Ready to Ship</h3>
-                    <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                <div class="container flex">
+                    <div class="image">
+                        <img src="img/portfolio/2.jpg" alt="Screenshot" class="screenshot editable" />
+                        <div class="abstract-container">
+                            <a href="https://www.elibrary.ru/item.asp?id=48036600" class="btn btn-default btn-xl page-scroll" style="background-color: #f05f40;">ABSTRACT</a>
+                        </div>
+                    </div>
+                    <div class="text editable">
+                        <h2>Сравнение результатов применения различных эволюционных алгоритмов для решения задачи оптимизации маршрута беспилотных аппаратов</h2>
+                        <p>В работе проводится сравнительный анализ точного и эвристических алгоритмов, представленных методом ветвей и границ, генетическим и муравьиным алгоритмами соответственно, для поиска оптимального решения задачи коммивояжера на примере робота-курьера. Целью работы является определение времени работы, длины полученного маршрута и объема памяти, необходимого для работы программы, при использовании метода ветвей и границ и эволюционных эвристических алгоритмов.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Up to Date</h3>
-                    <p class="text-muted">We update dependencies to keep things fresh.</p>
+                <div class="container flex">
+                    <div class="text editable">
+                        <h2>Архитектура холонической производственной системы</h2>
+                        <p>Проанализирован холонический подход к построению производственной системы. Проведено сравнение холонической системы типа PROSA с другими типами производственных систем. Разработан прототип архитектуры холонической производственной системы для мобильной сборки без конвейера.</p>
+                    </div>
+                    <div class="image">
+                        <img src="img/portfolio/3.jpg" alt="Screenshot" class="screenshot editable" />
+                        <div class="abstract-container">
+                            <a href="https://www.elibrary.ru/item.asp?id=54296528" class="btn btn-default btn-xl page-scroll" style="background-color: #f05f40;">ABSTRACT</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>Made with Love</h3>
-                    <p class="text-muted">You have to make your websites with love these days!</p>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
 </section>
 
-  <section class="no-padding" id="portfolio">
+
+<style>
+    .flex {
+        display: flex;
+        align-items: flex-start; /* Выравнивание по верху */
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    .text {
+        flex: 1;
+    }
+
+    .image {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрирование по горизонтали */
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px; /* Отступ между картинкой и кнопкой */
+    }
+
+    .abstract-container {
+        width: 100%;
+        text-align: center; /* Центрирование кнопки */
+    }
+
+    @media (max-width: 768px) {
+        .flex {
+            flex-direction: column;
+        }
+        .image {
+            margin-top: 20px;
+        }
+    }
+</style>
+
+<style>
+    .flex {
+        display: flex;
+        align-items: center; /* Выравнивание по вертикали */
+        justify-content: space-between; /* Распределение пространства */
+        gap: 40px; /* Расстояние между текстом и изображением */
+    }
+
+    .text {
+        flex: 1; /* Занимает доступное пространство */
+        max-width: 50%; /* Ограничение ширины текста */
+    }
+
+    .image {
+        flex: 1; /* Занимает доступное пространство */
+        text-align: right; /* Выравнивание изображения по правому краю */
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .flex {
+            flex-direction: column; /* На мобильных - вертикальное расположение */
+        }
+        .text, .image {
+            max-width: 100%;
+        }
+        .image {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+</style>
+  <!-- <section class="no-padding" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter">
             <div class="col-lg-4 col-sm-6">
@@ -233,13 +403,13 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-    <aside class="bg-dark">
+    <aside class="bg-dark" id="a">
       <div class="container text-center">
           <div class="call-to-action">
-              <h2>Free Download at Start Bootstrap!</h2>
-              <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+              <h2>что-то интересное про меня</h2>
+              <a href="#" class="btn btn-default btn-xl wow tada">тык!</a>
           </div>
       </div>
   </aside>
@@ -248,14 +418,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
+                <h2 class="section-heading">CONTACT</h2>
                 <hr class="primary">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                <p>я открыта к коммуникациям</p>
             </div>
         <div class="col-lg-2 col-lg-offset-2 text-center">
-            <a href="https://twitter.com/">
-                <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p></p>
+            <a href="https://t.me/VgorleCom">
+                <i class="fa fa-paper-plane fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p>@VgorleCom</p>
             </a>
         </div>
         <div class="col-lg-2 col-lg-offset-1 text-center">
@@ -265,9 +435,9 @@
             </a>
         </div>
         <div class="col-lg-2 col-lg-offset-1 text-center">
-            <a href="https://github.com/">
+            <a href="https://github.com/Anastasizzzz">
             <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p></p>
+                <p>Anastasizzzz</p>
             </a>
         </div>
 
